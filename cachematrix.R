@@ -1,4 +1,5 @@
-## The two functions calculate the inverse of a square invertible matrix through caching, which can reduce computational time for large matrix.
+## The two functions calculate the inverse of a square invertible matrix through caching, 
+## which can reduce computational time for large matrix.
 
 ## The first function, makeCacheMatrix creates a special matrix in the form of a list containing functions to
 ## set the value of the matrix
