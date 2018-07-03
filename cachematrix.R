@@ -1,7 +1,10 @@
-## Put comments here that give an overall description of what your
-## functions do
+## The two functions calculate the inverse of a square invertible matrix through caching, which can reduce computational time for large matrix.
 
-## Write a short comment describing this function
+## The first function, makeCacheMatrix creates a special matrix in the form of a list containing functions to
+## set the value of the matrix
+## get the value of the matrix
+## set the value of the inverse
+## get the value of the inverse
 
 makeCacheMatrix <- function(x = matrix()) {
       m <- NULL
@@ -19,10 +22,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## cacheSolve calculates the inverse of the special "matrix" created by makeCacheMatrix. 
 
 cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
+      ## Return a matrix that is the inverse of 'x'
       m <- x$getinverse()
       if(!is.null(m)) {
             message("getting cached data")
